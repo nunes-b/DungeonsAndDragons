@@ -1,16 +1,23 @@
-const personagemPedrinho = {
-    nome: 'Pedrinho',
-    vida: 7,
-    mana: 12,
-    level: 5,
-    tipo: 'Mago',
-}
+import { Personagem } from "./modules/personagem.js";
 
-const personagemJose = {
-    nome: 'Jose',
-    vida: 7,
-    mana: 6,
-    level: 3,
-    tipo: 'Arqueiro',
-}
+const personagemRomulo = new Personagem();
+personagemRomulo.nome = "Rômulo";
+personagemRomulo.mana = 12;
+personagemRomulo.vida = 7;
+personagemRomulo.level = 12;
+personagemRomulo.tipo = "Mago";
+personagemRomulo.descricao =
+  "Faz magica com os codigos através de um computador.";
 
+const personagemGabriela = new Personagem();
+personagemGabriela.nome = "Gabriela";
+personagemGabriela.mana = 10;
+personagemGabriela.vida = 9;
+personagemGabriela.level = 3;
+personagemGabriela.tipo = "Arqueira";
+personagemGabriela.descricao =
+  "Faz magica com os codigos através de um computador.";
+
+console.log(
+  personagemRomulo.obterInsignia() + " " + personagemGabriela.obterInsignia()
+);
